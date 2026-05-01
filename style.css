@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'tlous';
+    /* Nome que você vai usar */
+    src: url('assets/The Last Of Us Rough.ttf') format('truetype');
+    /* Caminho do arquivo */
+}
+
+* {
+    box-sizing: border-box;
+    /* faz width e height incluirem padding e border no calculo total do tamanho do elemento */
+    margin: 0;
+    /* remove margens padrão que o navegador aplica nos elementos */
+    padding: 0;
+    /* remove o espacamento interno padrão que o navegador aplica nos elementos */
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    /* define a fonte principal do texto */
+    line-height: 1.6;
+    /* aumenta a altura entre as linhas */
+    color: #f0f0f0;
+    /* define a cor padrao do texto */
+    background: linear-gradient(to bottom, #000000);
+    /* define a cor de fundo da página com gradiente mais claro */
+}
+
+.container {
+    width: min(1100px, 90%);
+    /* define a largura como maximo 1100px ou 90% da tela escolhendo o menor valor*/
+    margin: 0 auto;
+    /* Remove margem em cima/baixo e centraliza horizontalmente o bloco */
+
+}
+
+header {
+
+    color: #f0f0f0;
+    /* texto claro */
+    padding: 20px 0;
+    /* adiciona espaço interno de 60px em cima e em baixo, sem espaços em laterais */
+    border-bottom: 2px solid #000000;
+    /* borda inferior sutil */
+
+}
+
+nav {
+    display: flex;
+    /* coloca os elementos do menu em layout flexivel */
+    justify-content: space-between;
+    /* distribui os itens do menu com espaço entre eles */
+    align-items: center;
+    /* alinha os itens do menu verticalmente ao centro */
+    gap: 16px;
+    /* cria um espaçamento entre os itens filhos */
+    flex-wrap: wrap;
+    /* permite que os itens quebrem para a linha de baixo em telas menores */
+}
+
+nav ul {
+    list-style: none;
+    /* remove os marcadores de lista */
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    /* remove o sublinhado padrão dos links */
+
+    /* deixa o texto do  link em negrito */
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8b4513;
+    /* marrom no hover */
+}
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-image: url("assets/the-giraffe-scene-in-part-1-will-always-be-a-favourite-of-v0-8vf8kxyu7dkb1.webp");
+    box-shadow: inset 0 10px 10px black,
+        inset 0 -10px 10px black;
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    text-shadow: 0px 0px 10px black;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    /* define um tamanho grande para o titulo principal */
+    margin-bottom: 16px;
+    /* adiciona um espaço abaixo do título */
+}
+
+.hero p {
+    max-width: 700px;
+    /* Limita a largura máxima do paragrafo para facilitar a leitura */
+    margin: 0 auto 24px;
+    /* remove margin em cima, centraliza horizontalmente e adiciona margem abaixo */
+
+}
+
+.btn {
+    display: inline-block;
+    /* faz o link se comportar como um bloco em linha, permitindo padding e tamanho melhor controlados */
+    background: #8b4513;
+    /* marrom para tema */
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    /* arredonda os cantos do botão */
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #a0522d;
+    /* marrom mais claro no hover */
+}
+
+.features {
+    padding: 40px 0;
+    background: linear-gradient(to bottom, #000000);
+}
+
+.gameplay {
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #000000);
+}
+
+.grid {
+    display: grid;
+    /* ativa layout em grade para elementos filhos */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* cria colunas responsivas que se ajustam automaticamente com minimo de 220px */
+    gap: 20px;
+}
+
+article {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #e0e0e0;
+    /* texto ligeiramente cinza */
+    border: 1px solid #444;
+    /* borda sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.google-link {
+    padding: 50px;
+    text-align: center;
+
+}
+
+.google-link img {
+    max-width: 220px;
+    width: 100%;
+    ;
+    height: auto;
+    transition: transform 0.3s ease;
+    /* cria uma transição suave para mudanças na propriedade transform */
+    margin-top: 20px;
+}
+
+.google-link img:hover {
+    transform: scale(1.05);
+    /* aumenta a imagem em 10% quando o mouse estiver sobre ela */
+}
+
+footer {
+
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background: linear-gradient(to bottom, #000000, #333333);
+}
+
+.video {
+    margin-top: 20px;
+    border: 2px solid #444;
+    /* borda sutil para destacar o vídeo */
+    border-radius: 10px;
+    /* arredonda os cantos do vídeo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* sombra para dar profundidade */
+}
+
+.play {
+    width: 40px;
+}
+
+.steam {
+    width: 40px;
+}
+
+.titulo {
+    font-family: 'tlous', sans-serif;
+    /* Usa a fonte personalizada */
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin-bottom: -30px;
+    padding-bottom: -20px;
+
+}
+
+.logotitulo {
+    display: flex;
+    /* Usa flexbox para organizar os títulos */
+    flex-direction: column;
+}
+
+.fonte {
+    font-family: 'tlous', sans-serif;
+    font-size: 2.0rem;
+    font-weight: normal;
+}
+
+.redirect {
+    border-radius: 20px;
+}
+
+.alinhamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: auto;
+}

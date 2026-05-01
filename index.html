@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- Informa ao navegador que este documento usa HTML5 -->
+
+<html lang="pt-br"> <!-- Elemento raiz da página que envolve todo o HTML -->
+
+<head> <!-- Contem metadados, e configurções que não aparecem no conteudo -->
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="assets/favcom.jpg" href="favcom.jpg">
+    <!-- Define a codificação de caracteres como UTF-8 para suportar acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a pagina se adaptar corretamente a telas menores como celulares -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/The Last Of Us Rough.ttf" rel="stylesheet">
+    <title>The Last of Us</title><!-- Define o titulo que aparece na aba do navegador -->
+</head>
+
+<body>
+    <!-- body contem todo o Conteudo visivel da pagina -->
+    <header>
+        <!-- header representa o cabecalho da pagina ou de uma seção -->
+        <div class="container">
+            <!-- div usada para agrupar elementos e facilitar organização -->
+            <nav>
+                <!-- nav usada para agrupar links de navegação principais -->
+                <div class="logotitulo">
+                    <h2 class="titulo">THE</h2><!-- h2 titulo nivel 2 para subtitulos -->
+                    <h2 class="titulo">LAST</h2><!-- h2 titulo nivel 2 para subtitulos -->
+                    <h2 class="titulo">OF US</h2><!-- h2 titulo nivel 2 para subtitulos -->
+                </div>
+
+
+
+                <ul>
+
+                    <li><a href="https://www.playstation.com/pt-br/games/the-last-of-us-part-i/"><svg class="play"
+                                viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M0.69116 21.9548C-0.506476 22.7935 -0.284724 24.2384 2.44769 25.1419C5.18011 26.0455 8.35603 26.2323 11.1505 25.729C11.0707 25.729 11.3102 25.729 11.1505 25.729V22.8774L8.43588 23.8C7.39792 24.1355 6.35997 24.2194 5.32202 23.9677C4.5236 23.7161 4.68328 23.2129 5.64139 22.7935L11.1505 20.7806V17.6774L3.48565 20.4452C2.52754 20.7806 1.56943 21.2839 0.69116 21.9548ZM19.2146 9.37419V17.5097C22.4881 19.1871 25.0431 17.5097 25.0431 13.1484C25.0431 8.70323 23.5261 6.69032 19.1348 5.09677C16.8193 4.25806 14.4241 3.50323 12.0288 3V27.2387L17.6178 29V8.61935C17.6178 7.69677 17.6178 7.02581 18.2565 7.27742C19.1348 7.52903 19.2146 8.45161 19.2146 9.37419ZM29.5941 20.0258C27.2787 19.1871 24.8036 18.8516 22.4083 19.1032C21.0779 19.1906 19.8294 19.5869 18.5759 20.0258V23.2968L23.7656 21.2839C24.8036 20.9484 25.8415 20.8645 26.8795 21.1161C27.6779 21.3677 27.5182 21.871 26.5601 22.2903L18.5759 25.3935V28.5806L29.5941 24.3032C30.3925 23.9677 31.1111 23.5484 31.7499 22.8774C32.3088 22.0387 32.0692 20.8645 29.5941 20.0258Z"
+                                        fill="#ffffff"></path>
+                                </g>
+                            </svg></a></li>
+                    <li><a href="https://store.steampowered.com/agecheck/app/1888930/"><svg class="steam" fill="#ffffff"
+                                viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>steam</title>
+                                    <path
+                                        d="M18.102 12.129c0-0 0-0 0-0.001 0-1.564 1.268-2.831 2.831-2.831s2.831 1.268 2.831 2.831c0 1.564-1.267 2.831-2.831 2.831-0 0-0 0-0.001 0h0c-0 0-0 0-0.001 0-1.563 0-2.83-1.267-2.83-2.83 0-0 0-0 0-0.001v0zM24.691 12.135c0-2.081-1.687-3.768-3.768-3.768s-3.768 1.687-3.768 3.768c0 2.081 1.687 3.768 3.768 3.768v0c2.080-0.003 3.765-1.688 3.768-3.767v-0zM10.427 23.76l-1.841-0.762c0.524 1.078 1.611 1.808 2.868 1.808 1.317 0 2.448-0.801 2.93-1.943l0.008-0.021c0.155-0.362 0.246-0.784 0.246-1.226 0-1.757-1.424-3.181-3.181-3.181-0.405 0-0.792 0.076-1.148 0.213l0.022-0.007 1.903 0.787c0.852 0.364 1.439 1.196 1.439 2.164 0 1.296-1.051 2.347-2.347 2.347-0.324 0-0.632-0.066-0.913-0.184l0.015 0.006zM15.974 1.004c-7.857 0.001-14.301 6.046-14.938 13.738l-0.004 0.054 8.038 3.322c0.668-0.462 1.495-0.737 2.387-0.737 0.001 0 0.002 0 0.002 0h-0c0.079 0 0.156 0.005 0.235 0.008l3.575-5.176v-0.074c0.003-3.12 2.533-5.648 5.653-5.648 3.122 0 5.653 2.531 5.653 5.653s-2.531 5.653-5.653 5.653h-0.131l-5.094 3.638c0 0.065 0.005 0.131 0.005 0.199 0 0.001 0 0.002 0 0.003 0 2.342-1.899 4.241-4.241 4.241-2.047 0-3.756-1.451-4.153-3.38l-0.005-0.027-5.755-2.383c1.841 6.345 7.601 10.905 14.425 10.905 8.281 0 14.994-6.713 14.994-14.994s-6.713-14.994-14.994-14.994c-0 0-0.001 0-0.001 0h0z">
+                                    </path>
+                                </g>
+                            </svg></a></li>
+                </ul>
+                <ul>
+                    <!-- ul, cria uma lista não ordenada -->
+                    <li><a href="#inicio" class="fonte">INICIO</a></li> <!-- li tag item da lista  -->
+                    <li><a href="#beneficios" class="fonte">CONHECA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- main representa o conteudo principal da página -->
+        <section class="hero" id="inicio">
+            <!-- section agrupa um bloco tematico de conteudo -->
+            <div class="container">
+
+                <h1 class="fonte">THE LAST OF US: UMA JORNADA APOCALIPTICA</h1>
+                <p>
+                    Mergulhe no mundo pós-apocalíptico de The Last of Us, uma saga emocionante de sobrevivência, perda e
+                    redenção. Explore a história de Joel e Ellie em um universo devastado pela infecção Cordyceps.
+                </p>
+                <a href="#beneficios" class="btn fonte">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section class="features" id="beneficios">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 24px;" class="fonte">SOBRE A SAGA</h2>
+                <div class="grid">
+                    <article>
+                        <!-- article, representa um bloco de conteudo independente -->
+                        <h3>Jogos</h3><br>
+                        <p><strong>The Last of Us (2013):</strong> O início da jornada épica de Joel e Ellie. Uma
+                            narrativa profunda sobre sobrevivência em um mundo devastado.<br><br>
+                            <strong>The Last of Us Part II (2020):</strong> Uma continuação intensa, explorando temas de
+                            vingança, perdão e as consequências das ações humanas.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>História</h3> <br>
+                        <p>Em um mundo pós-apocalíptico, uma infecção fúngica transforma humanos em criaturas
+                            agressivas. Joel, um contrabandista endurecido, é contratado para escoltar Ellie, uma menina
+                            imune, através dos Estados Unidos. Sua jornada revela laços emocionais profundos e dilemas
+                            morais em meio ao caos.</p>
+                    </article>
+                    <article>
+                        <h3>Personagens Principais</h3> <br>
+                        <p><strong>Joel:</strong> Um sobrevivente pragmático, marcado por tragédias passadas.<br><br>
+                            <strong>Ellie:</strong> Inteligente, corajosa e cheia de vida, representando esperança em
+                            tempos sombrios.<br><br>
+                            <strong>Abby:</strong> Uma antagonista complexa, cujas ações desafiam noções de certo e
+                            errado.<br><br>
+                            Outros: Tess, Tommy, Marlene – cada um adiciona camadas à narrativa.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gameplay" id="gameplay">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 24px;" class="fonte">GAMEPLAY E MECANICAS</h2>
+                <div class="grid">
+                    <article>
+                        <h3>Combate e Sobrevivência</h3><br>
+                        <p>O jogo combina stealth, combate corpo a corpo e armas improvisadas. Colete recursos, crie
+                            itens e enfrente inimigos em ambientes dinâmicos.</p>
+                    </article>
+                    <article>
+                        <h3>Narrativa Interativa</h3><br>
+                        <p>Escolhas impactam a história. Explore um mundo rico com missões secundárias e encontros
+                            memoráveis.</p>
+                    </article>
+                    <article>
+                        <h3>Gráficos e Áudio</h3><br>
+                        <p>Visuais impressionantes e trilha sonora emotiva, com performances de voz excepcionais de Troy
+                            Baker e Ashley Johnson.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="google-link" id="google">
+            <div class="container">
+                <h1 class="fonte">TRAILER DO JOGO</h1>
+                <br> <br> <iframe class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/kE7li_u1nmg?si=XLm_eQNIZn-3_1Ti" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </a>
+                <br> <br>
+                <h2 class="fonte">CLIQUE PARA VISITAR A PAGINA DO JOGO</h2>
+                <a href="http://store.steampowered.com/agecheck/app/1888930/" target="_blank" rel="noopener noreferrer">
+                    <!-- target, abre o link em nova aba -->
+                    <!-- rel, melhora seguranca ao abrir nova aba -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIERmqs3Y3WiL_upqD_OrUCQVb48jVg-Wc1Q&s"
+                        class="redirect">
+                </a>
+            </div>
+        </section>
+        <a href="https://ockerdavi.github.io/Landing-Page-RDR2/" class="btn fonte alinhamento"> CONHECA OUTROS JOGOS</a>
+    </main>
+    <footer>
+        <!-- footer representa o rodapé da página -->
+        <div>
+            <p>&copy; 2026 - Página dedicada a The Last of Us. Criada com HTML e CSS.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
