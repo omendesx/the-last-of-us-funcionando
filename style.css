@@ -206,7 +206,18 @@ footer {
     background: linear-gradient(to bottom, #000000, #333333);
 }
 
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
     margin-top: 20px;
     border: 2px solid #444;
     /* borda sutil para destacar o vídeo */
@@ -214,6 +225,12 @@ footer {
     /* arredonda os cantos do vídeo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     /* sombra para dar profundidade */
+}
+
+@media (max-width: 600px) {
+    .video {
+        border-width: 1px;
+    }
 }
 
 .play {
@@ -250,7 +267,7 @@ footer {
     border-radius: 20px;
 }
 
-.alinhamento{
+.alinhamento {
     display: flex;
     justify-content: center;
     align-items: center;
