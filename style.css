@@ -176,6 +176,27 @@ article:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
+#infectados article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#infectados article img,
+#infectados article .infectado-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+#infectados .grid {
+    align-items: start;
+}
+
 .google-link {
     padding: 50px;
     text-align: center;
@@ -274,3 +295,4 @@ footer {
     width: 250px;
     margin: auto;
 }
+
