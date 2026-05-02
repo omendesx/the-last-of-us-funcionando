@@ -62,14 +62,14 @@ li {
 
 a:hover {
     cursor: pointer;
-    
+
     background-color: #fff;
     border-radius: 15px;
 
 }
 
 .container {
-   
+
     height: 100%;
     padding: 15px;
 
@@ -223,21 +223,21 @@ article>div>h3 {
     }
 }
 
-.zelda{
+.zelda {
     color: white;
     font-family: 'tlous', sans-serif;
     font-weight: normal;
     font-size: 40px;
 }
 
-.rd{
+.rd {
     color: white;
     font-family: 'tlous', sans-serif;
     font-weight: normal;
-font-size: 40px;
+    font-size: 40px;
 }
 
-.conheca{
+.conheca {
     color: white;
     font-family: 'tlous', sans-serif;
     font-weight: normal;
@@ -246,6 +246,6 @@ font-size: 40px;
     margin-top: 20px;
 }
 
-.jogos{
+.jogos {
     background-color: #000000;
 }
